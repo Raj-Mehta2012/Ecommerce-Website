@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ChartJs-Line</title>
+  <link rel="stylesheet" type="text/css" href="css/default.css">
+</head>
+<body>
+  <div class="chart-container">
+    <canvas id="line-chartcanvas"></canvas>
+  </div>
+
+	<!--JS FILES-->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="js/Chart.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+
+      var ctx=$("#line-chartcanvas");
+
+      var data= {
+        labels: ["Maths","Science","IT","History","Geography"],
+        datasets: [
+          {
+            label: "Raj",
+            data: [80, 91, 97, 86, 99],
+            backgroundColor: "blue",
+            borderColor: "lightblue",
+            fill: false,
+            lineTension: 0.3,
+            pointRadius: 5
+          },
+
+          {
+            label: "ClassAverage",
+            data: [65, 80, 85, 90, 80],
+            backgroundColor: "red",
+            borderColor: "orange",
+            fill: false,
+            lineTension: 0.3,
+            pointRadius: 5
+          },
+
+          {
+            label: "ClassTopper",
+            data: [90, 93, 99, 92, 99],
+            backgroundColor: "green",
+            borderColor: "lightgreen",
+            fill: false,
+            lineTension: 0.3,
+            pointRadius: 5
+          }
+        ]
+      };
+
+      var options={
+        title:{
+          display: true,
+          position: "top",
+          text: "CAKE-N-BAKE PRODUCT SALES ANALYSIS",
+          fontSize: 50,
+          fontColor: "#53244f"
+        },
+
+        legend:{
+          display: true,
+          position: "bottom"
+        }
+      };
+
+      var chart=new Chart(ctx,{
+        type:"line",
+        data:data,
+        options:options
+      });
+    });
+   
+   
+  </script>
+</body>
+</html>

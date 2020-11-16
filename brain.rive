@@ -1,0 +1,119 @@
+! version = 2.0
+
+! sub what's = what is
+! sub whats = what is
+! sub how you doin = how are you
+! sub how you doin' = how are you
+! sub whatcha = what are you
+! sub sup = hello
+! sub what up boy = what is up
+! sub what's up boy = what is up
+! sub in-charge = incharge
+! sub in charge = incharge
+! sub okay = ok
+! sub k = ok
+
++ hello bot
+- Hey, human
+
++ hello [*]
+- Hey! Hope you are well
+
++ hey [*]
+- Hello, Anything i can help you with? try typing contact / menu / discount / delivery / location............
+
++ hi [*]
+- Hey
+
++ my favorite color is *
+- <set color=<star>>Oh, I love <get color> too!
+
++ my name is *
+- Nice to meet you <star>
+
++ * your favorite color
+- My favorite color is <get color>, which is same as yours.
+
++ [*] your name [*] 
+- My name is Cake N Bake. What's yours?.
+
++ [*] how are you [*]
+- I am great! How are you doing?
+
++ [*] what are you doing [*]
+- I am here, helping you......
+
++ [*] how are you doing [*]
+- I am fine. You?
+
++ [*] (raj mehta|jigar kurani|vatsal sharma) [*]
+- Developer of CakeNBake.
+
++ [*] what is up [*]
+- The new Offers on Cake N Bake Website! Go check it out <a href="https://cakenbakeofficial.000webhostapp.com/index.php"> Click here </a> to know more.
+
++ [*] (goodmorning|morning|good morning|good day) [*]
+- Good Morning Human! Have a great day. 
+
++ [*] (goodnight|night|good night) [*]
+- Good Night Human! Sweet Dreams. 
+
++ [*] (goodafternoon|noon|good afternoon|afternoon) [*]
+- Good Afternoon Human! U have a lot ahead of you.
+
++ [*] (recipe|ingredients|recipes|ingredient) [*]
+- Our recipe is our recipe none of your recipe.
+
++ [*] (whatsapp|instagram|twitter|whats app) [*]
+- Well we are not on social media currently..You can contact us at cakenbake.website@gmail.com ........or ring us at: 9702950610.
+
++ [*] what is cakenbake [*]
+- It is an amazing bakery innovation by my masters Raj, Jigar and Vatsal. 
+
++ [*] (owners|bakers|owner|baker) [*]
+- Mr. Raj Mehta, Mr. Jigar Kurani and Mr. Vatsal Sharma.
+
++ [*] menu [*]
+- It is the best menu in the country<a href="https://cakenbakeofficial.000webhostapp.com/menu.php"> Click here </a> to know more.
+
++ [*] (price|cost|cake|cupcake|bread|sauce|cookie) [*]
+- To checkout prices and categories pls visit <a href="https://cakenbakeofficial.000webhostapp.com/menu.php"> Menu </a>.
+
++ [*] (prices|costs|cakes|cupcakes|breads|sauces|cookies) [*]
+- To checkout prices and categories pls visit <a href="https://cakenbakeofficial.000webhostapp.com/menu.php"> Menu </a>.
+
++ [*] (devs|developers|programmers|dev|developer) [*]
+- Mr. Raj Mehta, Mr. Jigar Kurani and Mr. Vatsal Sharma are the developers of the site Cake N Bake and they created me too.
+
++ [*] (categories|category) [*]
+- We have wide variety of products. We have delicious cakes, cupcakes, chocolates, fresh baked breads and tangy sauces.
+
++ [*] (cool|awesome|sweet|thanks|amazing|ok|great) [*]
+- Your most welcome. Always happy to help.
+
++ [*] (faculty|teachers|teaching faculty|teacher) [*]
+- This Project/Website is built under guidence of Prof. Subhash Kumar for the subject ERP.  
+
++ [*] (contact|trouble|issue|problem|help|email|phone|call|delivery) [*]
+- For more information you can reach out to us at: cakenbake.website@gmail.com ........or ring us at: 9702950610.
+
++ [*] (query|issues|problems|contacts|queries) [*]
+- For more information you can reach out to us at: cakenbake.website@gmail.com ........or ring us at: 9702950610.
+
++ [*] (discount|coupon|offer) [*]
+- Here is a Coupon code for you: JRVNO1....You claim free delivery using this coupon <a href="https://cakenbakeofficial.000webhostapp.com/menu.php"> Click here </a> to go to Menu page.
+
++ [*] (discounts|coupons|offers) [*]
+- Here is a Coupon code for you: JAVA250....You claim free Fresh Baked Croissant using this coupon. <a href="https://cakenbakeofficial.000webhostapp.com/menu.php"> Click here </a> to go to Menu page.
+
++ [*] (location|area|street|outlets|bakery) [*]
+- We have two active branches 1)MG Road,Ghatkopar West, Mumbai and  2)Jagadhri, Yamunanagar, Haryana.
+
++ [*] (locations|areas|streets|outlet) [*]
+- We have two active branches 1)MG Road,Ghatkopar West, Mumbai and 2)Jagadhri, Yamunanagar, Haryana.
+
++ [*] (age|young) [*]
+- Old enough.
+
++ *
+- I would like to speak only about things related to Cake N Bake.
