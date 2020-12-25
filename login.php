@@ -1,9 +1,12 @@
 <?php
 session_start();
+
 if(isset($_SESSION['username']))
 {
   header("Location:index.php");
 }
+define("SITE_KEY","6LezfucZAAAAAIq2O6TsyVK6qM4vDGPkXDhtSZNI");
+define("SECRET_KEY","6LezfucZAAAAABmmAm7wKCuEdhx4qNY0j7ti3BRi");
 require_once("dbcon.php");
 $db_handle = new DBController();
 ?>
@@ -82,13 +85,16 @@ button:hover {
 }
 </style>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 </head>
 
 
 <body>
  <?php include 'mainlayout.php';?>
-<form action="action_login.php" method="post" style="border:1px solid #ccc">
+
+<form action="action_login.php" method="post" style="border:1px solid #ccc" ID = "mForm">
   <div class="container">
     <h1 style="font-family: 'Pacifico'; color: maroon" align="center">Login Here</h1>
     <p style="font-size: 20px; color: maroon" align="center">Stay tuned with us for more exciting offers and discounts.</p>
@@ -111,6 +117,8 @@ button:hover {
     
     <input type="password" placeholder="Enter Password" name="password" id="myInput" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character(@$!%*?&)" required>
     <input type="checkbox" onclick="myFunction()">Show Password</br>
+    <div class="g-recaptcha" data-sitekey='<?php echo SITE_KEY; ?>'></div>
+
      <div class="clearfix">
       <a href="index.php"> <button type="button" class="cancelbtn">Cancel</button> </a>
       <button type="submit" class="signupbtn" name="submit" value="Sign-Up">Sign In</button>
@@ -135,5 +143,18 @@ function myFunction() {
 }
 </script>
 
+<script>
+$('#mForm').submit(function() {
+    res = grecaptcha.getResponse();
+    if(res.length>1)
+    {
+        return true;
+    }
+    else{
+        alert("Captcha is required");
+        return false;
+    }
+});
+</script>
 </body>
 </html>

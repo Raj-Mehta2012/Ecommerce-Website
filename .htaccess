@@ -6,3 +6,20 @@ RewriteEngine On
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+# HTID:16002779: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www.)?(cakenbakeofficial.000webhostapp.com)(/)?.*$      [NC]
+RewriteRule .*.(.zip|.rar|.exe|.mp3|.pdf|.swf|.psd)$ https://cakenbakeofficial.000webhostapp.com [R,NC]
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:16002779:
+
+
+
+
+
+# HTID:16002843: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www.)?(cakenbakeofficial.000webhostapp.com)(/)?.*$      [NC]
+RewriteRule .*.(.jpg|.jpeg|.gif|.png|.bmp|.tiff)$ https://cakenbakeofficial.000webhostapp.com [R,NC]
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:16002843:

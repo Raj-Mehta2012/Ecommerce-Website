@@ -7,6 +7,14 @@ require_once("./lib/config_paytm.php");
 require_once("./lib/encdec_paytm.php");
 session_start();
 $checkSum = "";
+if(preg_match("/(<|>)/",$_POST['name']))
+{
+    exit("Validation Failed");
+}
+if(preg_match("/(<|>)/",$_POST['mobile_no']))
+{
+    exit("Validation Failed");
+}
 $_SESSION['naam']=$_POST['name'];
 $_SESSION['phone']=$_POST['mobile_no'];
 $paramList = array();
